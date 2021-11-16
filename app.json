@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/about/about",
+    "pages/weekly/weekly"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [
+      {
+        "text": "每周推荐",
+        "pagePath": "pages/weekly/weekly",
+        "iconPath": "img/weekly.png",
+        "selectedIconPath": "img/weekly-selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "img/about.png",
+        "selectedIconPath": "img/about-selected.png"
+      }
+    ],
+    "color":"#000",
+    "selectedColor": "#00f"
+}
+}

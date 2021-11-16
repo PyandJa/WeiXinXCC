@@ -1,0 +1,15 @@
+<!--pages/weekly/weekly.wxml-->
+<view  class="">
+<swiper class="movie-swiper" indicator-dots="{{true}}">
+    <swiper-item class="movie" wx:for="{{weekMovieList}}" wx:key="{{item}}">
+        <view class="container movie-card">
+            <image class="movie-image" src="{{item.imgagePath}}"></image>
+            <text>第{{index+1}}周:{{item.name}}</text>
+            <text>点评：{{item.comment}}</text>
+            <text wx:if="{{item.isHighlyRecommended}}" style="font-size: 40rpx;color: red;">强烈推荐</text>
+        </view>
+    </swiper-item>
+</swiper>
+</view>
+
+
